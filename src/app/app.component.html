@@ -1,0 +1,39 @@
+<div class="container">
+<div class="row justify-content-center mt-5">
+  <div class="col-md-5">
+    <form [formGroup]="loginFrom">
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Name</label>
+      <input type="text" class="form-control" placeholder="Enter name" formControlName="name" >
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Email</label>
+      <input type="text" class="form-control" placeholder="Enter name" formControlName="email" >
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Phone</label>
+      <input type="text" class="form-control" formControlName="phone">
+    </div>
+    <button (click)="formSubmit()" class="btn btn-primary">Submit</button>
+  </form>
+  </div>
+
+</div>
+<table class="table">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Action</th>
+
+  </tr>
+  <tr *ngFor="let customer of customers">
+<td>{{customer.id}}</td>
+<td>{{customer.name}}</td>
+<td>{{customer.email}}</td>
+<td>{{customer.phone}}</td>
+<td><button class="btn btn-outline-info me-2" (click)="editClick(customer)">Edit</button><button  class="btn btn-outline-danger">Delete</button></td>
+  </tr>
+</table>
+</div>

@@ -1,0 +1,32 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "phone": "typicode",
+      "email": "axax"
+    },
+    {
+      "id": 2,
+      "name": "vsdv",
+      "email": "svsv",
+      "phone": "svsv"
+    },
+    {
+      "id": 3,
+      "name": "vsv",
+      "email": "svsv",
+      "phone": "svsv"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
